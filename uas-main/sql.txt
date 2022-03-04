@@ -1,0 +1,14 @@
+CREATE TABLE mahasiswa
+(
+    id INT NOT NULL AUTO_INCREMENT,
+    nama VARCHAR(128) NOT NULL,
+    nim CHAR(11) NOT NULL,
+    tempat_lahir VARCHAR(128) NOT NULL,
+    tanggal_lahir DATE,
+    email VARCHAR(128) NOT NULL,
+    telepon CHAR(12) NOT NULL ,
+    prodi VARCHAR(50) NOT NULL,
+    kosentrasi VARCHAR(50) NOT NULL,
+    UNIQUE KEY email_unique (email),
+    primary key (id)
+) ENGINE = InnoDB;
